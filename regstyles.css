@@ -1,0 +1,133 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 50vh;
+   
+    max-width: 7000px; /* Increased width */
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+
+form:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #96140a;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 15px;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px;
+}
+
+input[type="text"].error,
+input[type="number"].error,
+input[type="password"].error {
+    border-color: #96140a;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+    border-color: #96140a;
+    outline: none;
+    box-shadow: 0 0 5px rgba(150, 20, 10, 0.5);
+}
+
+/* Error text */
+.error-text {
+    color: #96140a;
+    font-size: 14px;
+    margin-top: -18px;
+    margin-bottom: 18px;
+}
+
+/* Success message */
+.message.success {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #d6e9c6;
+}
+
+/* Button styles */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #96140a;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #96140a;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"]:active {
+    background-color: #96140a;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    button[type="submit"] {
+        font-size: 16px;
+    }
+}

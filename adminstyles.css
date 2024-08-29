@@ -1,0 +1,133 @@
+/* Gstyles.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #96140a;
+    color: white;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.logout-button {
+    padding: 8px 16px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.logout-button:hover {
+    background-color: #d32f2f;
+}
+
+/* Search Bar */
+.search-bar {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+.search-bar input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 8px 16px;
+    background-color: #96140a;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.search-bar button:hover {
+    background-color: #96140a;
+}
+
+/* Table */
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #96140a;
+    color: white;
+}
+
+td {
+    background-color: #fafafa;
+}
+
+.delete-button {
+    color: red;
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 16px;
+}
+
+.delete-button:hover {
+    text-decoration: underline;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 16px;
+    background-color: #96140a;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.pagination a:hover {
+    background-color: #96140a;
+}
+
+.pagination a.disabled {
+    background-color: #ddd;
+    color: #999;
+    cursor: not-allowed;
+}

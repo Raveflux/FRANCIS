@@ -1,0 +1,108 @@
+/* styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, #96140a, #96140a); /* Slightly different gradient for a fresh look */
+    color: white;
+    padding: 15px 20px; /* Adjusted padding for a more balanced look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow for a more prominent header */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.5rem; /* Adjusted font size for better visibility */
+}
+
+.logout-button {
+    background: #96140a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 6px; /* Slightly more rounded corners */
+    transition: background 0.3s, transform 0.3s;
+}
+
+.logout-button:hover {
+    background: #96140a;
+    transform: scale(1.05); /* Added scaling effect on hover for a subtle interactive feel */
+}
+
+.info, form, #reward-options {
+    background: white;
+    padding: 20px;
+    border-radius: 10px; /* Increased border radius for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly deeper shadow */
+    margin: 80px 0 20px 0; /* Adjusted margin for better spacing */
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info:hover, form:hover, #reward-options:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow effect on hover */
+}
+
+.info p {
+    margin: 0 0 15px 0; /* Adjusted margin for better spacing */
+    font-size: 1rem; /* Adjusted font size for consistency */
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Slightly increased margin */
+    font-weight: 600; /* Slightly bolder text */
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px; /* Slightly increased padding */
+    margin-bottom: 15px; /* Adjusted margin for consistency */
+    border: 1px solid #ddd;
+    border-radius: 6px; /* Slightly more rounded corners */
+    box-sizing: border-box;
+    font-size: 1rem; /* Adjusted font size for better readability */
+}
+
+button {
+    background: #96140a;
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Slightly increased padding */
+    cursor: pointer;
+    border-radius: 6px; /* Slightly more rounded corners */
+    transition: background 0.3s, transform 0.3s; /* Added transform transition */
+    font-size: 1rem; /* Consistent font size */
+}
+
+button:hover {
+    background: #c81010; /* Slightly darker shade for hover effect */
+    transform: scale(1.05); /* Added scaling effect on hover */
+}
+
+#reward-options button {
+    margin: 5px;
+    width: calc(50% - 10px);
+    display: inline-block;
+    font-size: 1rem; /* Consistent font size */
+}
